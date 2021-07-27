@@ -11,98 +11,37 @@
  */
 int _printf(const char *format, ...)
 {
-	char *strtmp;
-	int i = 0, j = 0;
-	char buffer[1024], tmp[32];
-	va_list arguments;
-	va_start(arguments, format);
 
-	while (format && format[i])
+	va_list arguments;
+	char *strtmp = "";
+	int index_i = 0;
+	int index_j = 0;
+	int *i = &index_i, *j = &index_j;
+	char buffer[1536], tmp[32];
+	void (*pointerf)(va_list arguments, char *buffer, char *tmp, char *strtmp, int *j);
+
+	va_start(arguments, format);
+	while (format && format[*i])
 	{
-		if (format[i] != '%')
+		if (format[*i] != '%')
 		{
-			buffer[j] = format[i];
+			buffer[*j] = format[*i];
 		}
-		if (format[i] == '%')
+		if (format[*i] == '%')
 		{
-			i++;
-			switch (format[i])
+			(*i)++;
+
+			pointerf = get_op_cases((char *)format, *i);
+			if (pointerf == NULL)
 			{
-			case 'd':
-			{
-				_itoa(va_arg(arguments, int), tmp, 10);
-				_strcpy(&buffer[j], tmp);
-				j = j + _strlen(tmp);
-				break;
+				return(-1);
 			}
-			case 's':
-			{
-				strtmp = va_arg(arguments, char *);
-				_strcpy(&buffer[j], strtmp);
-				j = j + _strlen(strtmp);
-				break;
-			}
-			case '%':
-			{
-				strtmp = "%";
-				_strcpy(&buffer[j], strtmp);
-				break;
-			}
-			case 'c':
-			{
-				buffer[j] = (char)va_arg(arguments, int);
-				break;
-			}
-			case 'i':
-			{
-				_itoa(va_arg(arguments, int), tmp, 10);
-				_strcpy(&buffer[j], tmp);
-				j = j + _strlen(tmp);
-				break;
-			}
-			case 'u':
-			{
-				_utoa(va_arg(arguments, unsigned), tmp, 10);
-				_strcpy(&buffer[j], tmp);
-				j = j + _strlen(tmp);
-				break;
-			}
-			case 'o':
-			{
-				_utoa(va_arg(arguments, unsigned), tmp, 8);
-				_strcpy(&buffer[j], tmp);
-				j = j + _strlen(tmp);
-				break;
-			}
-			case 'x':
-			{
-				_utoa(va_arg(arguments, unsigned), tmp, 16);
-				strtmp = string_tolower(tmp);
-				_strcpy(&buffer[j], tmp);
-				j = j + _strlen(tmp);
-				break;
-			}
-			case 'X':
-			{
-				_utoa(va_arg(arguments, unsigned), tmp, 16);
-				_strcpy(&buffer[j], tmp);
-				j = j + _strlen(tmp);
-				break;
-			}
-			case 'p':
-			{
-				_utoa((unsigned int)va_arg(arguments, double), tmp, 16);
-				strtmp = string_tolower(tmp);
-				_strcpy(&buffer[j], tmp);
-				j = j + _strlen(tmp);
-				break;
-			}
-			}
+			pointerf(arguments, buffer, tmp, strtmp, j);
 		}
-		i++;
-		j++;
+		(*i)++;
+		(*j)++;
 	}
-	fwrite(buffer, j, 1, stdout);
+	fwrite(buffer, *j, 1, stdout);
 	va_end(arguments);
-	return (j);
+	return (*j);
 }

@@ -1,8 +1,8 @@
 #include "holberton.h"
-#include <stdio.h>
-#include <stdlib.h>
 #include <stdarg.h>
+#include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 char *_utoa(unsigned i, char *strout, int base)
 {
