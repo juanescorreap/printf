@@ -19,11 +19,15 @@ void _printf_d(va_list arguments, char *buffer, char *tmp, char *strtmp, int *j)
 	_strcpy(&buffer[*j], tmp);
 	*j = *j + _strlen(tmp);
 }
-void _printf_s(va_list arguments, char *buffer, char *strtmp, char *tmp,  int *j)
+void _printf_s(va_list arguments, char *buffer, char *strtmp, char *tmp, int *j)
 {
 	tmp = tmp;
 
 	strtmp = va_arg(arguments, char *);
+	if (strtmp == (char *)0)
+	{
+		strtmp = "(null)";
+	}
 	_strcpy(&buffer[*j], strtmp);
 	*j = *j + _strlen(strtmp);
 }
@@ -41,7 +45,7 @@ void _printf_char(va_list arguments, char *buffer, char *strtmp, char *tmp, int 
 	arguments = arguments;
 	strtmp = strtmp;
 	tmp = tmp;
-
+	
 	buffer[*j] = (char)va_arg(arguments, int);
 }
 void _printf_int(va_list arguments, char *buffer, char *tmp, char *strtmp, int *j)
