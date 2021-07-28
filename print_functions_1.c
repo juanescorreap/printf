@@ -45,7 +45,7 @@ void _printf_char(va_list arguments, char *buffer, char *strtmp, char *tmp, int 
 	arguments = arguments;
 	strtmp = strtmp;
 	tmp = tmp;
-	
+
 	buffer[*j] = (char)va_arg(arguments, int);
 }
 void _printf_int(va_list arguments, char *buffer, char *tmp, char *strtmp, int *j)

@@ -13,11 +13,11 @@ int _printf(const char *format, ...)
 {
 
 	va_list arguments;
-	char *strtmp = "";
+	char *strtmp = NULL;
 	int index_i = 0;
 	int index_j = 0;
 	int *i = &index_i, *j = &index_j;
-	char buffer[1536], tmp[32];
+	char buffer[4000], tmp[250];
 	void (*pointerf)(va_list arguments, char *buffer, char *tmp, char *strtmp, int *j);
 
 	va_start(arguments, format);
