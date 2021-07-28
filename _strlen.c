@@ -12,7 +12,7 @@ int _strlen(char *s)
 {
 	int l;
 
-	for (l = 0; s[l] != '\0'; l++)
+	for (l = 0; s[l] != '\0' && s[l + 1] != '\0'; l++)
 	{
 	}
 	return (l);

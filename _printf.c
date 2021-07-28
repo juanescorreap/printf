@@ -43,8 +43,5 @@ int _printf(const char *format, ...)
 	}
 	fwrite(buffer, *j, 1, stdout);
 	va_end(arguments);
-	for (*j = 0 ;buffer[*j] != '\0'; (*j)++)
-	{
-	}
 	return (*j);
 }
