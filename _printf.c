@@ -19,6 +19,10 @@ int _printf(const char *format, ...)
 	int *i = &index_i, *j = &index_j;
 	char buffer[4000], tmp[250];
 	void (*pointerf)(va_list arguments, char *buffer, char *tmp, char *strtmp, int *j);
+	if (format == NULL || arguments == NULL || (format[0] == '%' && format[1] == '\0'))
+	{
+		return (-1);
+	}
 
 	va_start(arguments, format);
 
@@ -35,10 +39,13 @@ int _printf(const char *format, ...)
 			pointerf = get_op_cases((char *)format, *i);
 			if (pointerf == NULL)
 			{
-				continue;
-
+				(*i)--;
+				buffer[*j] = '%';
 			}
-			pointerf(arguments, buffer, tmp, strtmp, j);
+			else
+			{
+				pointerf(arguments, buffer, tmp, strtmp, j);
+			}
 		}
 		(*i)++;
 		(*j)++;
