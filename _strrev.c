@@ -5,7 +5,7 @@
 #include <stdio.h>
 /**
  * _strrev - Function reverses the argument string in place
- * @str:  Character string to be reversed
+ * @string:  Character string to be reversed
  * Return: Pointer to reversed string.
  */
 char *_strrev(char *string)
@@ -13,6 +13,7 @@ char *_strrev(char *string)
 	int i;
 	int j;
 	int tmp = 0;
+
 	for (i = 0; string[i] != '\0'; i++)
 	{
 	}
