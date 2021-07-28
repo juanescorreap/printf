@@ -35,7 +35,8 @@ int _printf(const char *format, ...)
 			pointerf = get_op_cases((char *)format, *i);
 			if (pointerf == NULL)
 			{
-				return (-1);
+				continue;
+
 			}
 			pointerf(arguments, buffer, tmp, strtmp, j);
 		}
