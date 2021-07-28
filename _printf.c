@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 			pointerf = get_op_cases((char *)format, *i);
 			if (pointerf == NULL)
 			{
-				return(-1);
+				return (-1);
 			}
 			pointerf(arguments, buffer, tmp, strtmp, j);
 		}
@@ -43,5 +43,8 @@ int _printf(const char *format, ...)
 	}
 	fwrite(buffer, *j, 1, stdout);
 	va_end(arguments);
+	for (*j = 0 ;buffer[*j] != '\0'; (*j)++)
+	{
+	}
 	return (*j);
 }
