@@ -34,6 +34,7 @@ void _printf_percent(va_list arguments, char *buffer, char *strtmp, char *tmp, i
 
 	strtmp = "%";
 	_strcpy(&buffer[*j], strtmp);
+	*j = *j + _strlen(strtmp);
 }
 void _printf_char(va_list arguments, char *buffer, char *strtmp, char *tmp, int *j)
 {
