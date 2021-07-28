@@ -21,6 +21,7 @@ int _printf(const char *format, ...)
 	void (*pointerf)(va_list arguments, char *buffer, char *tmp, char *strtmp, int *j);
 
 	va_start(arguments, format);
+
 	while (format && format[*i])
 	{
 		if (format[*i] != '%')
