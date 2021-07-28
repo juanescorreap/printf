@@ -11,21 +11,19 @@
  */
 int _printf(const char *format, ...)
 {
-
 	va_list arguments;
 	char *strtmp = NULL;
-	int index_i = 0;
-	int index_j = 0;
+	int index_i = 0, index_j = 0;
 	int *i = &index_i, *j = &index_j;
 	char buffer[4000], tmp[250];
-	void (*pointerf)(va_list arguments, char *buffer, char *tmp, char *strtmp, int *j);
-	if (format == NULL || arguments == NULL || (format[0] == '%' && format[1] == '\0'))
+	void (*pointerf)(va_list, char *, char *, char *, int *);
+
+	if (format == NULL || arguments == NULL || (format[0] == '%' &&
+	format[1] == '\0'))
 	{
 		return (-1);
 	}
-
 	va_start(arguments, format);
-
 	while (format && format[*i])
 	{
 		if (format[*i] != '%')
