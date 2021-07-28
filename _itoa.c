@@ -35,5 +35,5 @@ char *_itoa(int i, char *strout, int base)
 	}
 	*str = '\0';
 	_strrev(strout);
-	return (trout);
+	return (strout);
 }
