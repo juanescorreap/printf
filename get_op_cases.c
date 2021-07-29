@@ -3,9 +3,13 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-
-
-void (*get_op_cases(char *format, int i))(va_list arguments, char *buffer, char *tmp, char *strtmp, int *j)
+/**
+ * get_op_cases - Function converts numbers to char.
+ * @format: Sting being searched for %
+ * @i: holds the place in which % was found in the string
+ * Return: void.
+ */
+void(*get_op_cases(char *format, int i))(va_list, char *, char *, char *, int*)
 {
 	int x = 0;
 
