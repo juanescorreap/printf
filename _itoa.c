@@ -18,7 +18,7 @@ char *_itoa(int i, char *strout, int base)
 	if (i == 0)
 	{
 		*str = '0';
-		return(str);
+		return (str);
 	}
 	if (i < 0)
 	{
@@ -34,6 +34,7 @@ char *_itoa(int i, char *strout, int base)
 		}
 		else
 		{
+			digit = digit * - 1;
 			*str = '0' + digit;
 		}
 		i = i / base;
@@ -43,6 +44,7 @@ char *_itoa(int i, char *strout, int base)
 	{
 		*str++ = '-';
 	}
+
 	*str = '\0';
 	_strrev(strout);
 	return (strout);
