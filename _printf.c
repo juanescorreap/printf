@@ -1,8 +1,3 @@
-/*
-* File: _printf.c
-* Auth: Andrés Medina, Juan Esteban Correa Pérez, Pablo Garcia.
-* Date: July 28, 2021
-*/
 #include "holberton.h"
 #include <stdarg.h>
 #include <stdlib.h>
