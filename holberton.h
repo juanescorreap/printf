@@ -21,7 +21,7 @@ void _printf_lowehexa(va_list, char *, char *, char *, int *);
 void _printf_upperhexa(va_list, char *, char *, char *, int *);
 void _printf_address(va_list, char *, char *, char *, int *);
 /**
- * options - struct with elements
+ * struct options - struct with elements
  * @cases: Pointer to char next to where % was found
  * @function: Pointer to function that will be passed
  * to perform printing
