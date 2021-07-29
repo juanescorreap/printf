@@ -13,7 +13,7 @@
  * Return: Void.
  */
 void _printf_d(va_list arguments, char *buffer, char *tmp,
-			   char *strtmp, int *j)
+char *strtmp, int *j)
 {
 	strtmp = strtmp;
 
@@ -31,7 +31,7 @@ void _printf_d(va_list arguments, char *buffer, char *tmp,
  * Return: Void.
  */
 void _printf_s(va_list arguments, char *buffer, char *strtmp, char *tmp,
-			   int *j)
+int *j)
 {
 	tmp = tmp;
 
@@ -60,7 +60,7 @@ void _printf_s(va_list arguments, char *buffer, char *strtmp, char *tmp,
  * Return: Void.
  */
 void _printf_percent(va_list arguments, char *buffer, char *strtmp, char *tmp,
-					 int *j)
+int *j)
 {
 	arguments = arguments;
 	tmp = tmp;
@@ -79,7 +79,7 @@ void _printf_percent(va_list arguments, char *buffer, char *strtmp, char *tmp,
  * Return: Void.
  */
 void _printf_char(va_list arguments, char *buffer, char *strtmp, char *tmp,
-				  int *j)
+int *j)
 {
 	arguments = arguments;
 	strtmp = strtmp;
@@ -97,7 +97,7 @@ void _printf_char(va_list arguments, char *buffer, char *strtmp, char *tmp,
  * Return: Void.
  */
 void _printf_int(va_list arguments, char *buffer, char *tmp, char *strtmp,
-				 int *j)
+int *j)
 {
 	strtmp = strtmp;
 

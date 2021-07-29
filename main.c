@@ -1,27 +1,24 @@
-#include <limits.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include "holberton.h"
 
 /**
  * main - Entry point
  *
- * Return: Always 0
+ * Return: 0 on success, error code otherwise
  */
 int main(void)
 {
-	int len;
-	int len2;
+	int len, len2;
 
-	len = _printf("hola %c\n", 'c');
-	len2 = printf("hola %c\n", 'c');
+	len = _printf("%c%cth %s%s a%cg%s: Y%sou %s no%ching%s Snow.%c", 'W', 'i', "some ", "more", 'r', "s", "", "know", 't', ", Jon", '\n');
+	len2 = printf("%c%cth %s%s a%cg%s: Y%sou %s no%ching%s Snow.%c", 'W', 'i', "some ", "more", 'r', "s", "", "know", 't', ", Jon", '\n');
 	fflush(stdout);
-	_printf("Len:[%d]\n", len);
-	printf("Len:[%d]\n", len2);
-
-	len = _printf("hola %s\n", "Perrito");
-	len2 = printf("hola %s\n", "Perrito");
-	fflush(stdout);
-	_printf("Len:[%d]\n", len);
-	printf("Len:[%d]\n", len2);
+	if (len != len2)
+	{
+		printf("Lengths differ.\n");
+		fflush(stdout);
+		return (1);
+	}
 	return (0);
 }

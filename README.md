@@ -1,6 +1,6 @@
 # _printf Function:page_facing_up:
 
-The `_printf` program is a pseudo- recreation of the C standard library function, `printf` as part of the low-level programming and algorithm track at Holberton School Colombia. 
+The `_printf` program is a pseudo- recreation of the C standard library function, `printf` as part of the low-level programming and algorithm track at Holberton School Colombia.
 
 ## Dependencies :couple:
 
@@ -39,10 +39,10 @@ $
 
 ### Syntaxis
 
-#### Prototype: 
+#### Prototype:
 `int _printf(const char *format, ...);`
 
-The function `_printf` writes output to standard output. 
+The function `_printf` writes output to standard output.
 
 The function writes under the control of a `format` string that specifies how consecutive arguments (accessed via the variable-length facilities of `stdarg`) are
-converted for output. 
+converted for output.
