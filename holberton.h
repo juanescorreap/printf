@@ -1,7 +1,6 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
 #include <stdarg.h>
-#include <limits.h>
 int _putchar(char c);
 int _printf(const char *format, ...);
 char *_itoa(int i, char *strout, int base);

@@ -16,6 +16,7 @@ void _printf_d(va_list arguments, char *buffer, char *tmp,
 char *strtmp, int *j)
 {
 	strtmp = strtmp;
+
 	_itoa(va_arg(arguments, int), tmp, 10);
 	_strcpy(&buffer[*j], tmp);
 	*j = *j + _strlen(tmp);
@@ -30,7 +31,7 @@ char *strtmp, int *j)
  * Return: Void.
  */
 void _printf_s(va_list arguments, char *buffer, char *strtmp, char *tmp,
-			   int *j)
+int *j)
 {
 	tmp = tmp;
 
@@ -59,7 +60,7 @@ void _printf_s(va_list arguments, char *buffer, char *strtmp, char *tmp,
  * Return: Void.
  */
 void _printf_percent(va_list arguments, char *buffer, char *strtmp, char *tmp,
-					 int *j)
+int *j)
 {
 	arguments = arguments;
 	tmp = tmp;
@@ -78,7 +79,7 @@ void _printf_percent(va_list arguments, char *buffer, char *strtmp, char *tmp,
  * Return: Void.
  */
 void _printf_char(va_list arguments, char *buffer, char *strtmp, char *tmp,
-				  int *j)
+int *j)
 {
 	arguments = arguments;
 	strtmp = strtmp;
@@ -96,7 +97,7 @@ void _printf_char(va_list arguments, char *buffer, char *strtmp, char *tmp,
  * Return: Void.
  */
 void _printf_int(va_list arguments, char *buffer, char *tmp, char *strtmp,
-				 int *j)
+int *j)
 {
 	strtmp = strtmp;
 
