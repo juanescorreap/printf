@@ -15,7 +15,11 @@ char *_itoa(int i, char *strout, int base)
 	char *str = strout;
 	int digit = 0;
 	int sign = 0;
-
+	if (i == 0)
+	{
+		*str = '0';
+		return(str);
+	}
 	if (i < 0)
 	{
 		sign = 1;
