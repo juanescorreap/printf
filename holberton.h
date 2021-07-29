@@ -26,6 +26,11 @@ void _printf_address(va_list, char *, char *, char *, int *);
  * @function: Pointer to function that will be passed
  * to perform printing
  * Return: Void
+ * 
+ * 
+ * 
+ * 
+ * 
  */
 typedef struct options
 {
