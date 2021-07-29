@@ -13,7 +13,7 @@
  * Return: Void.
  */
 void _printf_d(va_list arguments, char *buffer, char *tmp,
-char *strtmp, int *j)
+			   char *strtmp, int *j)
 {
 	strtmp = strtmp;
 
@@ -31,7 +31,7 @@ char *strtmp, int *j)
  * Return: Void.
  */
 void _printf_s(va_list arguments, char *buffer, char *strtmp, char *tmp,
-int *j)
+			   int *j)
 {
 	tmp = tmp;
 
@@ -40,8 +40,15 @@ int *j)
 	{
 		strtmp = "(null)";
 	}
-	_strcpy(&buffer[*j], strtmp);
-	*j = *j + _strlen(strtmp);
+	if (*strtmp == '\0')
+	{
+		(*j)--;
+	}
+	else
+	{
+		_strcpy(&buffer[*j], strtmp);
+		*j = *j + _strlen(strtmp);
+	}
 }
 /**
  * _printf_percent - Function pointed to to assist in print a %
@@ -53,7 +60,7 @@ int *j)
  * Return: Void.
  */
 void _printf_percent(va_list arguments, char *buffer, char *strtmp, char *tmp,
-int *j)
+					 int *j)
 {
 	arguments = arguments;
 	tmp = tmp;
@@ -72,7 +79,7 @@ int *j)
  * Return: Void.
  */
 void _printf_char(va_list arguments, char *buffer, char *strtmp, char *tmp,
-int *j)
+				  int *j)
 {
 	arguments = arguments;
 	strtmp = strtmp;
@@ -90,7 +97,7 @@ int *j)
  * Return: Void.
  */
 void _printf_int(va_list arguments, char *buffer, char *tmp, char *strtmp,
-int *j)
+				 int *j)
 {
 	strtmp = strtmp;
 
