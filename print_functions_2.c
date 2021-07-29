@@ -8,8 +8,8 @@
  * @arguments: variadic arguements
  * @buffer: array in which what is to be printed is allocated
  * @tmp: array to hold values temporarily
- * @strtmp:Pointer to hold values temporarily
- * @j:index that holds the position on buffer
+ * @strtmp:Pointer to hold values temporarily.
+ * @j:index that holds the position on buffer.
  * Return: Void.
  */
 void _printf_unsigned(va_list arguments, char *buffer, char *tmp, char *strtmp,
