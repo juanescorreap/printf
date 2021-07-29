@@ -28,13 +28,16 @@ char *_itoa(int i, char *strout, int base)
 	while (i)
 	{
 		digit = i % base;
+		if (digit < 0)
+		{
+			digit = digit * - 1;
+		}
 		if (digit > 9)
 		{
 			*str = 'A' + digit - 10;
 		}
 		else
 		{
-			digit = digit * - 1;
 			*str = '0' + digit;
 		}
 		i = i / base;
