@@ -28,7 +28,6 @@ void _printf_address(va_list, char *, char *, char *, int *);
  * Return: Void
  * 
  * 
- * 
  */
 typedef struct options
 {
