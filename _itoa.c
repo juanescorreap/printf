@@ -15,6 +15,7 @@ char *_itoa(int i, char *strout, int base)
 	char *str = strout;
 	int digit = 0;
 	int sign = 0;
+
 	if (i == 0)
 	{
 		*str = '0';
@@ -30,7 +31,7 @@ char *_itoa(int i, char *strout, int base)
 		digit = i % base;
 		if (digit < 0)
 		{
-			digit = digit * - 1;
+			digit = digit * -1;
 		}
 		if (digit > 9)
 		{
