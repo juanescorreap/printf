@@ -4,8 +4,8 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * _strlen -  Function that returns the length of a string
- * Return: Lenght of the string
+ * _strlen -  Function that returns the length of a string.
+ * Return: Lenght of the string.
  * @s: String to whose length is to be computed
  */
 int _strlen(char *s)

@@ -4,9 +4,9 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * _strrev - Function reverses the argument string in place
- * @string:  Character string to be reversed
+ * _strrev - Function reverses the argument string in place.
  * Return: Pointer to reversed string.
+ * @string:  Character string to be reversed.
  */
 char *_strrev(char *string)
 {

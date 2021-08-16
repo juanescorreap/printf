@@ -5,9 +5,9 @@
 #include <stdio.h>
 /**
  * *string_tolower - Function that changes all
- * uppercase letters of a string to lowecase
- * Return: String of type char
- * @tmp: String to be modified
+ * uppercase letters of a string to lowecase.
+ * Return: String of type char.
+ * @tmp: String to be modified.
  */
 char *string_tolower(char *tmp)
 {

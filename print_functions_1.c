@@ -4,13 +4,13 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * _printf_d - Function pointed to to assist in print a decimal
- * @arguments: variadic arguements
- * @buffer: array in which what is to be printed is allocated
- * @tmp: array to hold values temporarily
- * @strtmp:Pointer to hold values temporarily
- * @j:index that holds the position on buffer
+ * _printf_d - Function pointed to to assist in print a decimal.
  * Return: Void.
+ * @arguments: Variadic arguements.
+ * @buffer: Array in which what is to be printed is allocated.
+ * @tmp: Array to hold values temporarily.
+ * @strtmp: Pointer to hold values temporarily.
+ * @j: Index that holds the position on buffer.
  */
 void _printf_d(va_list arguments, char *buffer, char *tmp,
 char *strtmp, int *j)
@@ -23,12 +23,12 @@ char *strtmp, int *j)
 }
 /**
  * _printf_s - Function pointed to to assist in print a string
- * @arguments: variadic arguements
- * @buffer: array in which what is to be printed is allocated
- * @tmp: array to hold values temporarily
- * @strtmp:Pointer to hold values temporarily
- * @j:index that holds the position on buffer
  * Return: Void.
+ * @arguments: Variadic arguements
+ * @buffer: Array in which what is to be printed is allocated
+ * @tmp: Array to hold values temporarily
+ * @strtmp: Pointer to hold values temporarily
+ * @j: Index that holds the position on buffer
  */
 void _printf_s(va_list arguments, char *buffer, char *strtmp, char *tmp,
 int *j)
@@ -52,12 +52,12 @@ int *j)
 }
 /**
  * _printf_percent - Function pointed to to assist in print a %
- * @arguments: variadic arguements
- * @buffer: array in which what is to be printed is allocated
- * @tmp: array to hold values temporarily
- * @strtmp:Pointer to hold values temporarily
- * @j:index that holds the position on buffer
  * Return: Void.
+ * @arguments: Variadic arguements
+ * @buffer: Array in which what is to be printed is allocated
+ * @tmp: Array to hold values temporarily
+ * @strtmp: Pointer to hold values temporarily
+ * @j: Index that holds the position on buffer
  */
 void _printf_percent(va_list arguments, char *buffer, char *strtmp, char *tmp,
 int *j)
@@ -71,12 +71,12 @@ int *j)
 }
 /**
  * _printf_char - Function pointed to to assist in print a char
- * @arguments: variadic arguements
- * @buffer: array in which what is to be printed is allocated
- * @tmp: array to hold values temporarily
- * @strtmp:Pointer to hold values temporarily
- * @j:index that holds the position on buffer
  * Return: Void.
+ * @arguments: Variadic arguements
+ * @buffer: Array in which what is to be printed is allocated
+ * @tmp: Array to hold values temporarily
+ * @strtmp: Pointer to hold values temporarily
+ * @j: Index that holds the position on buffer
  */
 void _printf_char(va_list arguments, char *buffer, char *strtmp, char *tmp,
 int *j)
@@ -89,12 +89,12 @@ int *j)
 }
 /**
  * _printf_int - Function pointed to to assist in printing an int
- * @arguments: variadic arguements
- * @buffer: array in which what is to be printed is allocated
- * @tmp: array to hold values temporarily
- * @strtmp:Pointer to hold values temporarily
- * @j:index that holds the position on buffer
  * Return: Void.
+ * @arguments: Variadic arguements
+ * @buffer: Array in which what is to be printed is allocated
+ * @tmp: Array to hold values temporarily
+ * @strtmp: Pointer to hold values temporarily
+ * @j: Index that holds the position on buffer
  */
 void _printf_int(va_list arguments, char *buffer, char *tmp, char *strtmp,
 int *j)

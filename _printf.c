@@ -10,9 +10,9 @@
 #include <stdio.h>
 /**
  * _printf - Function that  that prints anything.
- * @format:  Character string.
- * Return: The number of characters printed
+ * Return: The number of characters printed.
  * (excluding the null byte used to end output to strings)
+ * @format:  Character string.
  */
 int _printf(const char *format, ...)
 {

@@ -21,11 +21,11 @@ void _printf_lowehexa(va_list, char *, char *, char *, int *);
 void _printf_upperhexa(va_list, char *, char *, char *, int *);
 void _printf_address(va_list, char *, char *, char *, int *);
 /**
- * struct options - struct with elements
- * @cases: Pointer to char next to where % was found
+ * struct options - struct with elements of type
+ * pointer and function pointer.
+ * @cases: Pointer to char next to where % was found.
  * @function: Pointer to function that will be passed
- * to perform printing
- * Return: Void
+ * to perform printing.
  */
 typedef struct options
 {

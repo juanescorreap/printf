@@ -5,10 +5,10 @@
 #include <stdio.h>
 /**
 *  * _utoa - Function converts numbers to char.
-* @i: unsigned integer to be converted to char.
+* Return: pointer to converted values
+* @i: Unsigned integer to be converted to char.
 * @strout: Pointer to string that holds the converted value.
 * @base: Base of the numercial system.
-* Return: pointer to converted values
 */
 char *_utoa(unsigned int i, char *strout, int base)
 {

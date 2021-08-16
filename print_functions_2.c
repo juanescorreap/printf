@@ -5,12 +5,12 @@
 #include <stdio.h>
 /**
  * _printf_unsigned - Function pointed to to assist in print a unsigned int
- * @arguments: variadic arguements
- * @buffer: array in which what is to be printed is allocated
- * @tmp: array to hold values temporarily
- * @strtmp:Pointer to hold values temporarily
- * @j:index that holds the position on buffer
  * Return: Void.
+ * @arguments: Variadic arguements
+ * @buffer: Array in which what is to be printed is allocated
+ * @tmp: Array to hold values temporarily
+ * @strtmp: Pointer to hold values temporarily
+ * @j: Index that holds the position on buffer
  */
 void _printf_unsigned(va_list arguments, char *buffer, char *tmp, char *strtmp,
 int *j)
@@ -23,12 +23,12 @@ int *j)
 }
 /**
  * _printf_octal - Function pointed to to assist in print an octal
- * @arguments: variadic arguements
- * @buffer: array in which what is to be printed is allocated
- * @tmp: array to hold values temporarily
- * @strtmp:Pointer to hold values temporarily
- * @j:index that holds the position on buffer
  * Return: Void.
+ * @arguments: Variadic arguements
+ * @buffer: Array in which what is to be printed is allocated
+ * @tmp: Array to hold values temporarily
+ * @strtmp: Pointer to hold values temporarily
+ * @j: Index that holds the position on buffer
  */
 void _printf_octal(va_list arguments, char *buffer, char *tmp, char *strtmp,
 int *j)
@@ -42,12 +42,12 @@ int *j)
 /**
  * _printf_lowehexa - Function pointed to to assist in
  * printing an hexadecimal in lowecase
- * @arguments: variadic arguements
- * @buffer: array in which what is to be printed is allocated
- * @tmp: array to hold values temporarily
- * @strtmp:Pointer to hold values temporarily
- * @j:index that holds the position on buffer
  * Return: Void.
+ * @arguments: Variadic arguements
+ * @buffer: Array in which what is to be printed is allocated
+ * @tmp: Array to hold values temporarily
+ * @strtmp: Pointer to hold values temporarily
+ * @j: Index that holds the position on buffer
  */
 void _printf_lowehexa(va_list arguments, char *buffer, char *tmp, char *strtmp,
 int *j)
@@ -60,12 +60,12 @@ int *j)
 /**
  * _printf_upperhexa - Function pointed to to assist in
  * printing an hexadecimal in uppercase
- * @arguments: variadic arguements
- * @buffer: array in which what is to be printed is allocated
- * @tmp: array to hold values temporarily
- * @strtmp:Pointer to hold values temporarily
- * @j:index that holds the position on buffer
  * Return: Void.
+ * @arguments: Variadic arguements
+ * @buffer: Array in which what is to be printed is allocated
+ * @tmp: Array to hold values temporarily
+ * @strtmp: Pointer to hold values temporarily
+ * @j: Index that holds the position on buffer
  */
 void _printf_upperhexa(va_list arguments, char *buffer, char *tmp,
 char *strtmp, int *j)
@@ -79,12 +79,12 @@ char *strtmp, int *j)
 /**
  * _printf_address - Function pointed to to assist in
  * printing a memory address
- * @arguments: variadic arguements
- * @buffer: array in which what is to be printed is allocated
- * @tmp: array to hold values temporarily
- * @strtmp:Pointer to hold values temporarily
- * @j:index that holds the position on buffer
  * Return: Void.
+ * @arguments: Variadic arguements
+ * @buffer: Array in which what is to be printed is allocated
+ * @tmp: Array to hold values temporarily
+ * @strtmp: Pointer to hold values temporarily
+ * @j: Index that holds the position on buffer
  */
 void _printf_address(va_list arguments, char *buffer, char *tmp, char *strtmp,
 int *j)

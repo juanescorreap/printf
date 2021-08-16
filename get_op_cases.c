@@ -5,9 +5,9 @@
 #include <stdio.h>
 /**
  * get_op_cases - Function converts numbers to char.
+ * Return: Void.
  * @format: Sting being searched for %
  * @i: holds the place in which % was found in the string
- * Return: void.
  */
 void(*get_op_cases(char *format, int i))(va_list, char *, char *, char *, int*)
 {
