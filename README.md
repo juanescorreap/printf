@@ -8,7 +8,8 @@ Our `_printf` function was coded on an Ubuntu 20.04.2 LTS machine with `gcc` ver
 
 ## Flowchart
 
-### Waiting 4 it ...
+![printf](https://user-images.githubusercontent.com/85316546/127687597-67ab22cd-758a-4c73-b37e-6fd77ab1ba6e.png)
+
 
 ## Usage :running:
 

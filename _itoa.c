@@ -5,7 +5,7 @@
 #include <stdio.h>
 /**
  * _itoa - Function converts numbers to char.
- * Return: pointer to converted values.
+ * Return: Pointer to converted values.
  * @i: Integer to be converted to char.
  * @strout: Pointer to string that holds the converted value.
  * @base: Base of the numercial system.
@@ -48,7 +48,6 @@ char *_itoa(int i, char *strout, int base)
 	{
 		*str++ = '-';
 	}
-
 	*str = '\0';
 	_strrev(strout);
 	return (strout);
