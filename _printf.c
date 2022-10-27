@@ -9,7 +9,7 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * _printf - Function that  that prints anything.
+ * _printf - Function that  that prints anything
  * Return: The number of characters printed.
  * (excluding the null byte used to end output to strings)
  * @format:  Character string.
