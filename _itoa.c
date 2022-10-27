@@ -4,7 +4,7 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * _itoa - Function converts numbers to char.
+ * _itoa - Function converts numbers to char
  * Return: Pointer to converted values.
  * @i: Integer to be converted to char.
  * @strout: Pointer to string that holds the converted value.
