@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * _strcpy - function that copies the string pointed to by src,
+ * _strcpy - Function that copies the string pointed to by src,
  * including the terminating null byte (\0), to the buffer pointed to by dest.
  * Return: Character copied from the first string to the second
  * @dest: Pointer to the string to be copied
