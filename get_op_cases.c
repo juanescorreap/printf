@@ -4,7 +4,7 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * get_op_cases - Function converts numbers to char.
+ * get_op_cases - Function converts numbers to char
  * Return: Void.
  * @format: Sting being searched for %
  * @i: holds the place in which % was found in the string
