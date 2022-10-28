@@ -4,7 +4,7 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * _printf_unsigned - Function pointed to to assist in print a unsigned int
+ * _printf_unsigned - Function pointed to to assist in print a unsigned int.
  * Return: Void.
  * @arguments: Variadic arguements
  * @buffer: Array in which what is to be printed is allocated
