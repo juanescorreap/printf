@@ -4,7 +4,7 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * _printf_d - Function pointed to to assist in print a decimal.
+ * _printf_d - Function pointed to to assist in print a decimal
  * Return: Void.
  * @arguments: Variadic arguements.
  * @buffer: Array in which what is to be printed is allocated.
